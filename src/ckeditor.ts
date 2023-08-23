@@ -41,6 +41,7 @@ import {
 } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
+import { Font } from '@ckeditor/ckeditor5-font';
 
 class ClassicEditor extends ClassicEditorBase {}
 class InlineEditor extends InlineEditorBase {}
@@ -78,6 +79,7 @@ const plugins = [
 	TableToolbar,
 	TableColumnResize,
 	TextTransformation,
+	Font
 ];
 
 ClassicEditor.builtinPlugins = plugins;
@@ -91,6 +93,7 @@ const config = {
 			'redo',
 			'|',
 			'heading',
+			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
 			'|',
 			'bold',
 			'italic',
