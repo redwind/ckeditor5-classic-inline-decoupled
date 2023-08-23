@@ -8,6 +8,7 @@ import { ClassicEditor as ClassicEditorBase } from '@ckeditor/ckeditor5-editor-c
 import { InlineEditor as InlineEditorBase } from '@ckeditor/ckeditor5-editor-inline';
 import { DecoupledEditor as DecoupledEditorBase } from '@ckeditor/ckeditor5-editor-decoupled';
 
+import { Alignment } from '@ckeditor/ckeditor5-alignment';
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { UploadAdapter } from '@ckeditor/ckeditor5-adapter-ckfinder';
 import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
@@ -17,6 +18,8 @@ import { CKBox } from '@ckeditor/ckeditor5-ckbox';
 import { CKFinder } from '@ckeditor/ckeditor5-ckfinder';
 import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
 import { Heading } from '@ckeditor/ckeditor5-heading';
+
+
 import {
 	Image,
 	ImageCaption,
@@ -47,6 +50,7 @@ class InlineEditor extends InlineEditorBase {}
 class DecoupledEditor extends DecoupledEditorBase {}
 
 const plugins = [
+	Alignment,
 	Essentials,
 	UploadAdapter,
 	Autoformat,
